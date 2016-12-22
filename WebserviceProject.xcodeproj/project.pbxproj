@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC3B6A9F1E0A6B7300D65688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B6A9E1E0A6B7300D65688 /* AppDelegate.swift */; };
-		EC3B6AA11E0A6B7300D65688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B6AA01E0A6B7300D65688 /* ViewController.swift */; };
-		EC3B6AA41E0A6B7300D65688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3B6AA21E0A6B7300D65688 /* Main.storyboard */; };
-		EC3B6AA61E0A6B7300D65688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3B6AA51E0A6B7300D65688 /* Assets.xcassets */; };
-		EC3B6AA91E0A6B7300D65688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3B6AA71E0A6B7300D65688 /* LaunchScreen.storyboard */; };
+		EC2532881E0BA5BC00555332 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2532871E0BA5BC00555332 /* HomeTableViewCell.swift */; };
+		ECFD20E91E0A82680029C9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD20DB1E0A82680029C9EA /* AppDelegate.swift */; };
+		ECFD20EA1E0A82680029C9EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD20DD1E0A82680029C9EA /* ViewController.swift */; };
+		ECFD20EB1E0A82680029C9EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFD20E01E0A82680029C9EA /* Assets.xcassets */; };
+		ECFD20EC1E0A82680029C9EA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECFD20E31E0A82680029C9EA /* Info.plist */; };
+		ECFD20ED1E0A82680029C9EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFD20E71E0A82680029C9EA /* LaunchScreen.storyboard */; };
+		ECFD20EE1E0A82680029C9EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFD20E81E0A82680029C9EA /* Main.storyboard */; };
+		ECFD20F01E0A89880029C9EA /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD20EF1E0A89880029C9EA /* HomeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC2532871E0BA5BC00555332 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		EC3B6A9B1E0A6B7300D65688 /* WebserviceProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebserviceProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC3B6A9E1E0A6B7300D65688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC3B6AA01E0A6B7300D65688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC3B6AA31E0A6B7300D65688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EC3B6AA51E0A6B7300D65688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EC3B6AA81E0A6B7300D65688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EC3B6AAA1E0A6B7300D65688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECFD20DB1E0A82680029C9EA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECFD20DD1E0A82680029C9EA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECFD20E01E0A82680029C9EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECFD20E31E0A82680029C9EA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECFD20E71E0A82680029C9EA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECFD20E81E0A82680029C9EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ECFD20EF1E0A89880029C9EA /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +59,88 @@
 		EC3B6A9D1E0A6B7300D65688 /* WebserviceProject */ = {
 			isa = PBXGroup;
 			children = (
-				EC3B6A9E1E0A6B7300D65688 /* AppDelegate.swift */,
-				EC3B6AA01E0A6B7300D65688 /* ViewController.swift */,
-				EC3B6AA21E0A6B7300D65688 /* Main.storyboard */,
-				EC3B6AA51E0A6B7300D65688 /* Assets.xcassets */,
-				EC3B6AA71E0A6B7300D65688 /* LaunchScreen.storyboard */,
-				EC3B6AAA1E0A6B7300D65688 /* Info.plist */,
+				ECFD20DA1E0A82680029C9EA /* Application */,
+				ECFD20DC1E0A82680029C9EA /* Controller */,
+				ECFD20DE1E0A82680029C9EA /* Model */,
+				ECFD20DF1E0A82680029C9EA /* Resource */,
+				ECFD20E11E0A82680029C9EA /* Service */,
+				ECFD20E21E0A82680029C9EA /* Supporting Files */,
+				ECFD20E41E0A82680029C9EA /* View  */,
 			);
 			path = WebserviceProject;
+			sourceTree = "<group>";
+		};
+		ECFD20DA1E0A82680029C9EA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				ECFD20DB1E0A82680029C9EA /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		ECFD20DC1E0A82680029C9EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECFD20DD1E0A82680029C9EA /* ViewController.swift */,
+				ECFD20EF1E0A89880029C9EA /* HomeTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ECFD20DE1E0A82680029C9EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECFD20DF1E0A82680029C9EA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				ECFD20E01E0A82680029C9EA /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		ECFD20E11E0A82680029C9EA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		ECFD20E21E0A82680029C9EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECFD20E31E0A82680029C9EA /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECFD20E41E0A82680029C9EA /* View  */ = {
+			isa = PBXGroup;
+			children = (
+				ECFD20E51E0A82680029C9EA /* CustomCell */,
+				ECFD20E61E0A82680029C9EA /* Storyboard */,
+			);
+			path = "View ";
+			sourceTree = "<group>";
+		};
+		ECFD20E51E0A82680029C9EA /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				EC2532871E0BA5BC00555332 /* HomeTableViewCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		ECFD20E61E0A82680029C9EA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				ECFD20E71E0A82680029C9EA /* LaunchScreen.storyboard */,
+				ECFD20E81E0A82680029C9EA /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +175,6 @@
 				TargetAttributes = {
 					EC3B6A9A1E0A6B7200D65688 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = QKY55K6NCH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,9 +202,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3B6AA91E0A6B7300D65688 /* LaunchScreen.storyboard in Resources */,
-				EC3B6AA61E0A6B7300D65688 /* Assets.xcassets in Resources */,
-				EC3B6AA41E0A6B7300D65688 /* Main.storyboard in Resources */,
+				ECFD20EE1E0A82680029C9EA /* Main.storyboard in Resources */,
+				ECFD20EB1E0A82680029C9EA /* Assets.xcassets in Resources */,
+				ECFD20ED1E0A82680029C9EA /* LaunchScreen.storyboard in Resources */,
+				ECFD20EC1E0A82680029C9EA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,31 +216,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3B6AA11E0A6B7300D65688 /* ViewController.swift in Sources */,
-				EC3B6A9F1E0A6B7300D65688 /* AppDelegate.swift in Sources */,
+				ECFD20F01E0A89880029C9EA /* HomeTableViewController.swift in Sources */,
+				ECFD20E91E0A82680029C9EA /* AppDelegate.swift in Sources */,
+				EC2532881E0BA5BC00555332 /* HomeTableViewCell.swift in Sources */,
+				ECFD20EA1E0A82680029C9EA /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		EC3B6AA21E0A6B7300D65688 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC3B6AA31E0A6B7300D65688 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EC3B6AA71E0A6B7300D65688 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC3B6AA81E0A6B7300D65688 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EC3B6AAB1E0A6B7300D65688 /* Debug */ = {
@@ -259,8 +321,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QKY55K6NCH;
-				INFOPLIST_FILE = WebserviceProject/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "WebserviceProject/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WebserviceProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,8 +334,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QKY55K6NCH;
-				INFOPLIST_FILE = WebserviceProject/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "WebserviceProject/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WebserviceProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +362,7 @@
 				EC3B6AAF1E0A6B7300D65688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
