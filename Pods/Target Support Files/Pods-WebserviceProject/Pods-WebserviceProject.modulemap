@@ -1,0 +1,6 @@
+framework module Pods_WebserviceProject {
+  umbrella header "Pods-WebserviceProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
