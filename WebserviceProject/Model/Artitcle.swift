@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class Article{
     
@@ -14,4 +15,22 @@ class Article{
     var title : String?
     var description : String?
     var image : String?
+    
+    init() {
+        self.id = 0
+        self.title = ""
+        self.image = ""
+        self.description = ""
+        self.image = ""
+    }
+    init(article  :JSON) {
+        self.id = article["ID"].int
+        self.title = article["TITLE"].string
+        self.description = article["DESCRIPTION"].string
+        self.image = article["IMAGE"].string
+    }
 }
+
+
+
+

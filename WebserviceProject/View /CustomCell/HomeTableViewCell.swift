@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeTableViewCell: UITableViewCell {
 
@@ -16,5 +17,11 @@ class HomeTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func configureCell(article: Article) {
+         self.homeTitleLabel.text = article.title
+         self.homeDescriptionLabel.text = article.description
+         self.homeImageView.kf.setImage(with:URL(string: article.image!), placeholder: #imageLiteral(resourceName: "103308459-RTX22GPJ.530x298") )
     }
 }

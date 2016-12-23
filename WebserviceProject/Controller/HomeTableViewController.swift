@@ -10,15 +10,17 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
 
-    var article : [Article]?
+    var articles : [Article]?
     
     var articleService : ArticleService?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //Initial
-        article = [Article]()
-        articleService?.getData(page: 1, limit: 15)
+        articles = [Article]()
+        articleService = ArticleService()
+        articleService?.delegate = self
+        articleService?.getData(page: 1, limit: 40)
         
     }
     
@@ -31,15 +33,13 @@ class HomeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return (self.article?.count)!
+        return (self.articles?.count)!
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "homeTableVIewCell", for: indexPath) as! HomeTableViewCell
-        cell.homeTitleLabel.text = "Pisith Ly"
-        cell.homeDescriptionLabel.text = "Description"
-        cell.homeImageView.image = #imageLiteral(resourceName: "103308459-RTX22GPJ.530x298")
+        cell.configureCell(article: (self.articles?[indexPath.row])!)
         return cell
     }
  
@@ -53,4 +53,13 @@ class HomeTableViewController: UITableViewController {
     */
 
     
+}
+
+// Conform Protocol to get data
+extension HomeTableViewController : ArticleServiceProtocol {
+    internal func didResponseData(articles: [Article]) {
+        self.articles = articles
+        self.tableView.reloadData()
+    }
+
 }
