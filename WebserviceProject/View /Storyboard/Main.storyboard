@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="-52" y="123"/>
         </scene>
-        <!--Home Table View Controller-->
+        <!--Home-->
         <scene sceneID="D1P-LT-9hN">
             <objects>
                 <tableViewController id="ZyB-2e-P6O" customClass="HomeTableViewController" customModule="WebserviceProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="124"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kJr-f4-jWO" id="8Oy-Xd-1ps">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vw0-33-lLM">
@@ -55,7 +55,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="42" id="Hjm-na-RPW"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -101,7 +101,7 @@
                             <outlet property="delegate" destination="ZyB-2e-P6O" id="13P-wc-0c5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="nns-ei-uh4">
+                    <navigationItem key="navigationItem" title="Home" id="nns-ei-uh4">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="byC-MD-5He"/>
                     </navigationItem>
                 </tableViewController>
