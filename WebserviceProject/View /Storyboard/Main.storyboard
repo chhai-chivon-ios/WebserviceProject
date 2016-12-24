@@ -104,6 +104,9 @@
                     <navigationItem key="navigationItem" title="Home" id="nns-ei-uh4">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="byC-MD-5He"/>
                     </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="UUd-Dm-7Dd">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="trq-Az-pWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,7 +117,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xA9-4k-2xS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="n1f-v6-MEd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n1f-v6-MEd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

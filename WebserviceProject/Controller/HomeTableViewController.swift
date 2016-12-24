@@ -12,16 +12,16 @@ class HomeTableViewController: UITableViewController {
 
     var articles : [Article]?
     
-    var articleService : ArticleService?
+    var articlePresenter : ArticlePresenter?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //Initial
         articles = [Article]()
-        articleService = ArticleService()
-        articleService?.delegate = self
-        articleService?.getData(page: 1, limit: 40)
-        
+        articlePresenter = ArticlePresenter()
+        articlePresenter?.delegate = self
+        articlePresenter?.getData(page: 1, limit: 15)
+        self.refreshControl?.addTarget(self, action: #selector(self.refrshControlHandler), for: .valueChanged)
     }
     
     // MARK: - Table view data source
@@ -43,6 +43,10 @@ class HomeTableViewController: UITableViewController {
         return cell
     }
  
+    func refrshControlHandler() {
+        self.articlePresenter?.getData(page: 1, limit: 15)
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -52,13 +56,23 @@ class HomeTableViewController: UITableViewController {
     }
     */
 
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        if  indexPath.row >= (self.articles?.count)! - 1 {
+            if Pagination.shared.curentPage < Pagination.shared.totalPage {
+                self.articlePresenter?.getData(page: Pagination.shared.curentPage + 1, limit: 15)
+            }
+        }
+    }
     
 }
 
-// Conform Protocol to get data
-extension HomeTableViewController : ArticleServiceProtocol {
-    internal func didResponseData(articles: [Article]) {
-        self.articles = articles
+// Conform Protocol to get
+extension HomeTableViewController : ArticlePresenterProtocol {
+    
+    func ResponseArticle(articles: [Article]) {
+        self.articles?.append(contentsOf: articles)
+        self.refreshControl?.endRefreshing()
         self.tableView.reloadData()
     }
 

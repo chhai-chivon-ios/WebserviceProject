@@ -17,8 +17,11 @@ class ArticleService {
     func getData(page: Int , limit: Int){
       
          Alamofire.request("http://120.136.24.174:1301/v1/api/articles?page=\(page)&limit=\(limit)",method:.get).responseJSON{ (response) in
-                
+            
                 let responseJson = JSON(data : response.data!)
+                var pagination = responseJson["PAGINATION"]
+                Pagination.shared.curentPage = pagination["PAGE"].int!
+                Pagination.shared.totalPage = pagination["TOTAL_PAGES"].int!
                 var articles = [Article]()
                 for art in responseJson["DATA"].array!{
                     articles.append(Article(article: art))
