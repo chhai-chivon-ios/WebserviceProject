@@ -44,17 +44,37 @@ class HomeTableViewController: UITableViewController {
     }
  
     func refrshControlHandler() {
+        self.articles?.removeAll()
         self.articlePresenter?.getData(page: 1, limit: 15)
         
     }
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "homeToDetail", sender: nil)
+        
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let moreRowAction = UITableViewRowAction(style: .normal, title: "Edit", handler:{action, indexpath in
+            
+        })
+        
+        moreRowAction.backgroundColor = UIColor(red: 0.298, green: 0.851, blue: 0.3922, alpha: 1.0);
+        
+        let deleteRowAction = UITableViewRowAction(style: .destructive, title: "Delete", handler:{action, indexpath in
+            print(" My Index  \((self.articles?[indexPath.row].id)!)")
+            self.articlePresenter?.deleteData(articleID: (self.articles?[indexPath.row].id)!, completion: { (status) in
+                if status == true {
+                    self.articles?.remove(at: indexPath.row)
+                    self.tableView.deleteRows(at: [indexPath], with: .fade)
+                }
+            })
+            
+       })
+        
+        return [deleteRowAction, moreRowAction];
+    }
 
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
@@ -75,5 +95,5 @@ extension HomeTableViewController : ArticlePresenterProtocol {
         self.refreshControl?.endRefreshing()
         self.tableView.reloadData()
     }
-
+    
 }

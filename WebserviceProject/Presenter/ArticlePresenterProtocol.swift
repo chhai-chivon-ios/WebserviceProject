@@ -11,4 +11,10 @@ import Foundation
 protocol ArticlePresenterProtocol {
     
     func ResponseArticle(articles : [Article])
+    func didResponseDataPost(articles : Article)
+}
+
+extension ArticlePresenterProtocol {
+    func didResponseDataPost(articles : Article) {  }
+    func ResponseArticle(articles : [Article]) { }
 }

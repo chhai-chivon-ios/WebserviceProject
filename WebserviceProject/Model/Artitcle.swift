@@ -29,6 +29,13 @@ class Article{
         self.description = article["DESCRIPTION"].string
         self.image = article["IMAGE"].string
     }
+    
+    func converToObject() -> [String : Any] {
+        let data = ["TITLE": self.title!, "DESCRIPTION" : self.description! ,"AUTHOR": 1,
+                    "GATEGORY_ID": 1 ,"STATUS": "1","IMAGE": self.image!] as [String : Any]
+        
+        return data
+    }
 }
 
 

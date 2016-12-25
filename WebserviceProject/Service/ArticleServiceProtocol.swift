@@ -11,6 +11,6 @@ import Foundation
 protocol ArticleServiceProtocol {
     
     func didResponseData(articles : [Article])
-    
+    func didResponseDataPost(articles : Article)
 }
 

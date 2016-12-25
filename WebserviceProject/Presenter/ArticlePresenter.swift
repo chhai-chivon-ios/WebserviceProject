@@ -23,13 +23,32 @@ class ArticlePresenter {
          articleService.getData(page: page, limit: limit)
     }
     
+    func postData(data : [String: Any])  {
+         articleService.postData(data: data)
+    }
+    
+    func deleteData(articleID : Int , completion :@escaping (_ status : Bool) -> Void) {
+        print("Prensenter")
+        articleService.deleteData(articleID: articleID, completion:{(status) in
+        completion(status)
+        print("My Status  \(status)")
+        })
+        
+    }
+
+    
 }
 
 extension ArticlePresenter : ArticleServiceProtocol{
     
-    internal func didResponseData(articles: [Article]) {
+    func didResponseData(articles: [Article]) {
         //print("Number of : \(articles.count)")
         self.delegate?.ResponseArticle(articles: articles)
     }
-
+    
+    func didResponseDataPost(articles: Article) {
+        self.delegate?.didResponseDataPost(articles: articles)
+    }
+    
+    
 }

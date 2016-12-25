@@ -12,11 +12,12 @@
 		EC0290501E0CEF550081E206 /* ArticleServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC02904F1E0CEF550081E206 /* ArticleServiceProtocol.swift */; };
 		EC2532881E0BA5BC00555332 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2532871E0BA5BC00555332 /* HomeTableViewCell.swift */; };
 		EC3689E91E0ED02900AF2FDA /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3689E81E0ED02900AF2FDA /* Pagination.swift */; };
+		EC3689EB1E0EE6E200AF2FDA /* EditedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3689EA1E0EE6E200AF2FDA /* EditedTableViewController.swift */; };
+		EC3689ED1E0FDCD700AF2FDA /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3689EC1E0FDCD700AF2FDA /* DetailTableViewController.swift */; };
 		EC45D5081E0BB7A4001CCACD /* Artitcle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC45D5071E0BB7A4001CCACD /* Artitcle.swift */; };
 		EC5466051E0CFE38006BDF21 /* ArticlePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5466041E0CFE38006BDF21 /* ArticlePresenter.swift */; };
 		EC5466071E0D30D9006BDF21 /* ArticlePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5466061E0D30D9006BDF21 /* ArticlePresenterProtocol.swift */; };
 		ECFD20E91E0A82680029C9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD20DB1E0A82680029C9EA /* AppDelegate.swift */; };
-		ECFD20EA1E0A82680029C9EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD20DD1E0A82680029C9EA /* ViewController.swift */; };
 		ECFD20EB1E0A82680029C9EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFD20E01E0A82680029C9EA /* Assets.xcassets */; };
 		ECFD20ED1E0A82680029C9EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFD20E71E0A82680029C9EA /* LaunchScreen.storyboard */; };
 		ECFD20EE1E0A82680029C9EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFD20E81E0A82680029C9EA /* Main.storyboard */; };
@@ -31,12 +32,13 @@
 		EC02904F1E0CEF550081E206 /* ArticleServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleServiceProtocol.swift; sourceTree = "<group>"; };
 		EC2532871E0BA5BC00555332 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		EC3689E81E0ED02900AF2FDA /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		EC3689EA1E0EE6E200AF2FDA /* EditedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditedTableViewController.swift; sourceTree = "<group>"; };
+		EC3689EC1E0FDCD700AF2FDA /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		EC3B6A9B1E0A6B7300D65688 /* WebserviceProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebserviceProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC45D5071E0BB7A4001CCACD /* Artitcle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artitcle.swift; sourceTree = "<group>"; };
 		EC5466041E0CFE38006BDF21 /* ArticlePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlePresenter.swift; sourceTree = "<group>"; };
 		EC5466061E0D30D9006BDF21 /* ArticlePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlePresenterProtocol.swift; sourceTree = "<group>"; };
 		ECFD20DB1E0A82680029C9EA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECFD20DD1E0A82680029C9EA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECFD20E01E0A82680029C9EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECFD20E31E0A82680029C9EA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECFD20E71E0A82680029C9EA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -136,8 +138,9 @@
 		ECFD20DC1E0A82680029C9EA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				ECFD20DD1E0A82680029C9EA /* ViewController.swift */,
 				ECFD20EF1E0A89880029C9EA /* HomeTableViewController.swift */,
+				EC3689EA1E0EE6E200AF2FDA /* EditedTableViewController.swift */,
+				EC3689EC1E0FDCD700AF2FDA /* DetailTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -327,15 +330,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECFD20F01E0A89880029C9EA /* HomeTableViewController.swift in Sources */,
+				EC3689ED1E0FDCD700AF2FDA /* DetailTableViewController.swift in Sources */,
 				ECFD20E91E0A82680029C9EA /* AppDelegate.swift in Sources */,
 				EC45D5081E0BB7A4001CCACD /* Artitcle.swift in Sources */,
 				EC02904E1E0CB93A0081E206 /* ArticleSevice.swift in Sources */,
+				EC3689EB1E0EE6E200AF2FDA /* EditedTableViewController.swift in Sources */,
 				EC0290501E0CEF550081E206 /* ArticleServiceProtocol.swift in Sources */,
 				EC5466051E0CFE38006BDF21 /* ArticlePresenter.swift in Sources */,
 				EC5466071E0D30D9006BDF21 /* ArticlePresenterProtocol.swift in Sources */,
 				EC3689E91E0ED02900AF2FDA /* Pagination.swift in Sources */,
 				EC2532881E0BA5BC00555332 /* HomeTableViewCell.swift in Sources */,
-				ECFD20EA1E0A82680029C9EA /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
