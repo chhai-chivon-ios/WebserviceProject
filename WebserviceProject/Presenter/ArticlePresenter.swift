@@ -27,11 +27,12 @@ class ArticlePresenter {
          articleService.postData(data: data)
     }
     
+    func updateData(data : [String: Any],cheeck : Bool)  {
+        articleService.updateData(data: data,cheeck : cheeck)
+    }
     func deleteData(articleID : Int , completion :@escaping (_ status : Bool) -> Void) {
-        print("Prensenter")
         articleService.deleteData(articleID: articleID, completion:{(status) in
         completion(status)
-        print("My Status  \(status)")
         })
         
     }
@@ -41,6 +42,10 @@ class ArticlePresenter {
 
 extension ArticlePresenter : ArticleServiceProtocol{
     
+    func didResponseDataUpdate(articles: Article) {
+        self.delegate?.didResponseDataUpdate(articles: articles)
+    }
+
     func didResponseData(articles: [Article]) {
         //print("Number of : \(articles.count)")
         self.delegate?.ResponseArticle(articles: articles)

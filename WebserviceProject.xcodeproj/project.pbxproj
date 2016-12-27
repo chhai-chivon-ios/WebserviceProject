@@ -22,6 +22,7 @@
 		ECFD20ED1E0A82680029C9EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFD20E71E0A82680029C9EA /* LaunchScreen.storyboard */; };
 		ECFD20EE1E0A82680029C9EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFD20E81E0A82680029C9EA /* Main.storyboard */; };
 		ECFD20F01E0A89880029C9EA /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD20EF1E0A89880029C9EA /* HomeTableViewController.swift */; };
+		ECFDDFB11E10E94E002E3C48 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECFDDFB01E10E94E002E3C48 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +41,10 @@
 		EC5466061E0D30D9006BDF21 /* ArticlePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlePresenterProtocol.swift; sourceTree = "<group>"; };
 		ECFD20DB1E0A82680029C9EA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECFD20E01E0A82680029C9EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ECFD20E31E0A82680029C9EA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECFD20E71E0A82680029C9EA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECFD20E81E0A82680029C9EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ECFD20EF1E0A89880029C9EA /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		ECFDDFB01E10E94E002E3C48 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +175,7 @@
 		ECFD20E21E0A82680029C9EA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				ECFD20E31E0A82680029C9EA /* Info.plist */,
+				ECFDDFB01E10E94E002E3C48 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -268,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECFDDFB11E10E94E002E3C48 /* Info.plist in Resources */,
 				ECFD20EE1E0A82680029C9EA /* Main.storyboard in Resources */,
 				ECFD20EB1E0A82680029C9EA /* Assets.xcassets in Resources */,
 				ECFD20ED1E0A82680029C9EA /* LaunchScreen.storyboard in Resources */,
